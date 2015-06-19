@@ -1,0 +1,40 @@
+{
+  "name": "marko-demo",
+  "version": "1.0.0",
+  "description": "a marko demo project",
+  "keywords": [
+    "marko",
+    "demo"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/coolwust/marko-demo",
+  "bugs": {
+    "url": "https://github.com/coolwust/marko-demo",
+    "email": "coolwust@gmail.com"
+  },
+  "author": {
+    "name": "coolwust",
+    "email": "coolwust@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coolwust/marko-demo.git"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "dependencies": {
+    "co": "4.*",
+    "es6-promisify": "2.*",
+    "koa": "0.*",
+    "koa-compress": "1.*",
+    "koa-router": "5.*",
+    "koa-static": "1.*",
+    "marko": "2.*"
+  },
+  "devDependencies": {
+    "mocha": "2.*",
+    "chai": "3.*"
+  }
+}

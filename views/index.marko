@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Marko Test</title>
+    </head>
+    <body>
+        <async-fragment data-provider="data.shoppingCart" var="cart" client-reorder="true">
+        <async-fragment-placeholder>
+            loading...
+        </async-fragment-placeholder>
+        <table border="2">
+            <tr for="item in cart.items">
+                <td>${item.title}</td>
+                <td>${item.author}</td>
+                <td>${item.price}</td>
+                <td>${item.quantity}</td>
+            </tr>
+        </table>
+        </async-fragment>
+        <div>
+        ----------------------------------------------------------- <br>
+        -----------------------------------------------------------
+        </div>
+        <async-fragment data-provider="data.ad" var="ad" client-reorder="true">
+        <async-fragment-placeholder>
+            loading...
+        </async-fragment-placeholder>
+        <table border="2">
+            <tr for="item in ad.items">
+                <td>${item.title}</td>
+                <td>${item.url}</td>
+            </tr>
+        </table>
+        </async-fragment>
+        <async-fragments>
+    </body>
+</html>
